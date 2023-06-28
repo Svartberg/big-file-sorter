@@ -1,0 +1,23 @@
+spring:
+  codec:
+    max-in-memory-size: 150000KB
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+  tomcat:
+    max-wait: 20000
+    max-active: 50
+    max-idle: 20
+    min-idle: 15
+
+server:
+  port: 8090
+
+springdoc:
+  swagger-ui:
+     operations-sorter: method
+
+bigfile:
+  sorter:
+    splitFilePath: "data/tmp"
